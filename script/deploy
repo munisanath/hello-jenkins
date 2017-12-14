@@ -4,6 +4,6 @@ ssh app@dockerr.eastus2.cloudapp.azure.com <<EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
-  forever restartall
+  forever start app.js
   exit
 EOF
