@@ -6,7 +6,7 @@ ssh app@dockerr.eastus2.cloudapp.azure.com <<EOF
   npm install --production
   forever stopall
   forever start app.js
-  docker run -it munisanath/rediscache
+  docker run -it munisanath/rediscache /bin/bash/
   mkdir muni
   exit
 EOF
